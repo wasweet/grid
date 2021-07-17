@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		article {
+			width: 300px;
+			height: 300px;
+			display: grid;
+			border: 1px solid #00FFFF;
+			grid-template-rows: repeat(2,1fr);
+			grid-template-columns: repeat(2,1fr);
+		}
+		article div {
+			border: 1px solid antiquewhite;
+			background-color: #FAEBD7;
+			background-clip: content-box;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+		div:nth-child(1) {
+			grid-row-start: 1;
+			grid-row-end: 3;
+			grid-column-start: 1;
+			grid-column-end: 2;
+		}
+		</style>
+	</head>
+		<article>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</article>
+	<body>
+	</body>
+</html>
